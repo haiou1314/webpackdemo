@@ -10,3 +10,9 @@ import './css/index.css'
 import './styles/index.less'
 
 $('#swiper').css('background-color', '')
+// index.js
+import imgUrl from './assets/1.gif';
+
+let img = document.createElement('img');
+img.src = imgUrl;
+document.body.appendChild(img);

@@ -4,3 +4,6 @@
   background-color: red;
   color: #000;
 }
+body {
+  background: url('../assets/1.jpg') no-repeat center;
+}

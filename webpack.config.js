@@ -42,6 +42,23 @@ module.exports = {
         // style-loader 在把css代码插入到 dom中
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
+      {
+        // 图片文件的配置(仅适用于webpack5版本)
+        test: /\.(png|jpg|gif|jpeg)$/i,
+        type: 'asset', // 在导出一个 data URI 和发送一个单独的文件之间自动选择
+        parser: {
+          // 解析器 规则
+          dataUrlCondition: {
+            // dataUrl的情况
+            maxSize: 10 * 1024,
+            // maxSize 限制最大值
+          },
+        },
+        generator: {
+          //生成器：对直接复制过去的图片名字长度进行处理
+          filename: '[hash:6][ext]', //资源文件处理之后 输出的文件名 ext文件扩展名
+        },
+      },
     ],
   },
 }
