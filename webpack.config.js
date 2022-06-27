@@ -2,6 +2,8 @@ const path = require('path')
 // 引入自动生成 html 的插件
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+
 module.exports = {
   entry: './src/index.js', // 入口
   output: {
@@ -13,5 +15,6 @@ module.exports = {
       template: './public/index.html', // 告诉webpack使用插件时, 以我们自己的html文件作为模板去生成dist/html文件
       filename: 'index.html', // 生成文件的名称
     }),
+    new CleanWebpackPlugin(), // 删除的是ouput path 里配置的那个输出文件的文件夹// 默认情况下dist
   ],
 }
