@@ -9,6 +9,37 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/banner.js":
+/*!***********************!*\
+  !*** ./src/banner.js ***!
+  \***********************/
+/***/ (() => {
+
+eval("// 轮播图逻辑\nconsole.log('实现轮播图的业务逻辑');\n\n//# sourceURL=webpack://webpackdemo/./src/banner.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _banner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./banner.js */ \"./src/banner.js\");\n/* harmony import */ var _banner_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_banner_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabs.js */ \"./src/tabs.js\");\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tabs_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _styles_index_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/index.less */ \"./src/styles/index.less\");\n/* harmony import */ var _assets_1_gif__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/1.gif */ \"./src/assets/1.gif\");\n/* harmony import */ var _assets_fonts_iconfont_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/fonts/iconfont.css */ \"./src/assets/fonts/iconfont.css\");\n//引入banner.js\n //引入tabs.js\n\n //引入jquery\n\n //引入index.css\n\n //引入index.less\n\n\njquery__WEBPACK_IMPORTED_MODULE_2___default()('#swiper').css('background-color', ''); // index.js\n\n // 引入字体图标文件\n\n\n\nvar fn = function fn() {\n  console.log('张三');\n};\n\nfn();\nvar img = document.createElement('img');\nimg.src = _assets_1_gif__WEBPACK_IMPORTED_MODULE_5__;\ndocument.body.appendChild(img);\n\n//# sourceURL=webpack://webpackdemo/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/tabs.js":
+/*!*********************!*\
+  !*** ./src/tabs.js ***!
+  \*********************/
+/***/ (() => {
+
+eval("// tab栏切换的逻辑\nconsole.log('实现tabs标签页的逻辑');\n\n//# sourceURL=webpack://webpackdemo/./src/tabs.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/styles/index.less":
 /*!************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/less-loader/dist/cjs.js!./src/styles/index.less ***!
@@ -181,37 +212,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 "use strict";
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://webpackdemo/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/banner.js":
-/*!***********************!*\
-  !*** ./src/banner.js ***!
-  \***********************/
-/***/ (() => {
-
-eval("// 轮播图逻辑\r\nconsole.log('实现轮播图的业务逻辑')\r\n\n\n//# sourceURL=webpack://webpackdemo/./src/banner.js?");
-
-/***/ }),
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _banner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./banner.js */ \"./src/banner.js\");\n/* harmony import */ var _banner_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_banner_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tabs.js */ \"./src/tabs.js\");\n/* harmony import */ var _tabs_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tabs_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./css/index.css */ \"./src/css/index.css\");\n/* harmony import */ var _styles_index_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/index.less */ \"./src/styles/index.less\");\n/* harmony import */ var _assets_1_gif__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/1.gif */ \"./src/assets/1.gif\");\n/* harmony import */ var _assets_fonts_iconfont_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/fonts/iconfont.css */ \"./src/assets/fonts/iconfont.css\");\n//引入banner.js\r\n\r\n\r\n//引入tabs.js\r\n\r\n\r\n//引入jquery\r\n\r\n\r\n//引入index.css\r\n\r\n\r\n//引入index.less\r\n\r\n\r\njquery__WEBPACK_IMPORTED_MODULE_2___default()('#swiper').css('background-color', '')\r\n// index.js\r\n;\r\n\r\n// 引入字体图标文件\r\n\r\n\r\nlet img = document.createElement('img')\r\nimg.src = _assets_1_gif__WEBPACK_IMPORTED_MODULE_5__\r\ndocument.body.appendChild(img)\r\n\n\n//# sourceURL=webpack://webpackdemo/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/tabs.js":
-/*!*********************!*\
-  !*** ./src/tabs.js ***!
-  \*********************/
-/***/ (() => {
-
-eval("// tab栏切换的逻辑\r\nconsole.log('实现tabs标签页的逻辑')\r\n\n\n//# sourceURL=webpack://webpackdemo/./src/tabs.js?");
 
 /***/ }),
 

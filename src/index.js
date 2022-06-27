@@ -20,6 +20,11 @@ import imgUrl from './assets/1.gif'
 // 引入字体图标文件
 import './assets/fonts/iconfont.css'
 
+const fn = ()=>{
+    console.log('张三');
+}
+fn()
+
 let img = document.createElement('img')
 img.src = imgUrl
 document.body.appendChild(img)
