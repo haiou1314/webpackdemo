@@ -20,6 +20,9 @@ import imgUrl from './assets/1.gif'
 // 引入字体图标文件
 import './assets/fonts/iconfont.css'
 
+//引入app.vue
+import './app.vue'
+
 const fn = ()=>{
     console.log('张三');
 }

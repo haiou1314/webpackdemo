@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
+// webpack.config.js
+const { VueLoaderPlugin } = require('vue-loader')
+
 module.exports = {
   entry: './src/index.js', // 入口
   mode: 'development',
@@ -17,6 +20,8 @@ module.exports = {
       filename: 'index.html', // 生成文件的名称
     }),
     new CleanWebpackPlugin(), // 删除的是ouput path 里配置的那个输出文件的文件夹// 默认情况下dist
+    // 请确保引入这个插件！
+    new VueLoaderPlugin(),
   ],
   devServer: {
     port: 3000, // 端口号
@@ -80,12 +85,17 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-            loader: 'babel-loader',
-            options: {
-                presets: ['@babel/preset-env'] // 预设:转码规则(用bable开发环境本来预设的)
-            }
-        }
-    }
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'], // 预设:转码规则(用bable开发环境本来预设的)
+          },
+        },
+      },
+      // ... 其它规则
+      {
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
     ],
   },
 }
