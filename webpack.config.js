@@ -6,6 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js', // 入口
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'), // 出口路径 绝对路径
     filename: 'main.js', // 出口文件名
@@ -17,4 +18,8 @@ module.exports = {
     }),
     new CleanWebpackPlugin(), // 删除的是ouput path 里配置的那个输出文件的文件夹// 默认情况下dist
   ],
+  devServer: {
+    port: 3000, // 端口号
+    open: true,
+  },
 }
